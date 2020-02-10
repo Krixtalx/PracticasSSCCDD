@@ -20,6 +20,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.lang.Thread.State;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -33,6 +34,7 @@ public class Main {
      * @throws java.io.IOException
      */
     public static void main(String[] args) throws IOException {
+
         System.out.printf("Prioridad: %s\n", Thread.MIN_PRIORITY);
         System.out.printf("Prioridad: %s\n", Thread.NORM_PRIORITY);
         System.out.printf("Prioridad: %s\n", Thread.MAX_PRIORITY);
@@ -80,20 +82,58 @@ public class Main {
             System.err.println("Error en apertura del fichero");
         }
 
+//-------------------------------------------------------------------------------------------------------
         Thread tarea = new PrimeGenerator();
         tarea.start();
+        try {
+            TimeUnit.SECONDS.sleep(2);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+        tarea.interrupt();
+
+//---------------------------------------------------------------------------------------------------------------
+        FileSearch busqueda = new FileSearch("..//..//..", "build.xml");
+        Thread hilo = new Thread(busqueda);
+        hilo.start();
         try {
             TimeUnit.SECONDS.sleep(5);
         } catch (InterruptedException ex) {
             ex.printStackTrace();
         }
-        tarea.interrupt();
+        hilo.interrupt();
+
+//----------------------------------------------------------------------------------------------------------------
+        FileClock reloj = new FileClock();
+        Thread nuevoHilo = new Thread(reloj);
+        nuevoHilo.start();
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+        nuevoHilo.interrupt();
+
+//-------------------------------------------------------------------------------------------------------------------
+        DataSourceLoader dsLoader = new DataSourceLoader();
+        Thread thread1 = new Thread(dsLoader, "DataSourceThread");
+        thread1.start();
+
+        NetworkConnectionsLoader ncLoader = new NetworkConnectionsLoader();
+        Thread thread2 = new Thread(ncLoader, "NetworkConnectionLoader");
+        thread2.start();
+
+        try {
+            thread1.join();
+            thread2.join();
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+
+        System.out.printf("La configuración inicial ha sido cargada: %s", new Date());
+
     }
 
-    
-    
-    
-    
     private static void writeThreadInfo(PrintWriter pw, Thread hilo, Thread.State estado) {
         pw.printf("Main : Id %d - %s\n", hilo.getId(), hilo.getName());
         pw.printf("Main : Prioridad: %d\n", hilo.getPriority());
