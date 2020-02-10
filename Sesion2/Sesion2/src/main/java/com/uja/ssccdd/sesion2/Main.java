@@ -132,6 +132,21 @@ public class Main {
 
         System.out.printf("La configuración inicial ha sido cargada: %s", new Date());
 
+        //---------------------------------------------------------------------------------------------------------------------
+        
+        Task task = new Task();
+        Thread thread = new Thread(task);
+        thread.setUncaughtExceptionHandler(new ExceptionHandler());
+        thread.start();
+
+        try {
+            thread.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.printf("El hilo ha terminado\n");
+
     }
 
     private static void writeThreadInfo(PrintWriter pw, Thread hilo, Thread.State estado) {
