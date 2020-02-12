@@ -17,26 +17,26 @@
 package com.uja.ssccdd.sesion2;
 
 import java.util.Date;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 /**
  *
  * @author José Antonio
  */
-public class FileClock implements Runnable {
+public class UnsafeTask implements Runnable{
 
     @Override
     public void run() {
-        try {
-            for (int i = 0; i < 10; i++) {
-                System.out.printf("%s\n", new Date());
-                TimeUnit.SECONDS.sleep(1);
-                if (Thread.currentThread().isInterrupted()) {
-                    throw new InterruptedException();
-                }
-            }
-        } catch (InterruptedException e) {
-            System.out.printf("The FileClock has been interrupted\n");
+        Date fecha = new Date();
+        Random generador = new Random();
+        System.out.printf("La fecha es: %s. %s\n", fecha,Thread.currentThread().getName());
+        try{
+            TimeUnit.SECONDS.sleep(generador.nextInt(4)+1);
+        }catch(InterruptedException ex){
+            ex.printStackTrace();
         }
-    }
+        System.out.printf("Finalizado: %s. Comenzado: %s\n", Thread.currentThread().getName(), fecha);
+    }   
+    
 }

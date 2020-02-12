@@ -133,7 +133,6 @@ public class Main {
         System.out.printf("La configuración inicial ha sido cargada: %s", new Date());
 
         //---------------------------------------------------------------------------------------------------------------------
-        
         Task task = new Task();
         Thread thread = new Thread(task);
         thread.setUncaughtExceptionHandler(new ExceptionHandler());
@@ -146,6 +145,31 @@ public class Main {
         }
 
         System.out.printf("El hilo ha terminado\n");
+
+        //--------------------------------------------------------------------------------------------------------------------------
+//        UnsafeTask tarea1 = new UnsafeTask();
+//
+//        for (int i = 0; i < 3; i++) {
+//            Thread hilo2 = new Thread(tarea1);
+//            hilo2.start();
+//            try {
+//                TimeUnit.SECONDS.sleep(2);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }
+
+        SafeTask tarea2 = new SafeTask();
+
+        for (int i = 0; i < 3; i++) {
+            Thread hilo2 = new Thread(tarea2);
+            hilo2.start();
+            try {
+                TimeUnit.SECONDS.sleep(2);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
 
     }
 
