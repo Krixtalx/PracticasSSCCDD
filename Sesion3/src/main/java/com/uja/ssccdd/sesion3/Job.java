@@ -11,7 +11,7 @@ package com.uja.ssccdd.sesion3;
  */
 public class Job implements Runnable {
 
-    private PrintQueue cola;
+    private final PrintQueue cola;
 
     public Job(PrintQueue cola) {
         this.cola = cola;
