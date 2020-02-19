@@ -1,4 +1,4 @@
-package com.uja.ssccdd.sesion3;
+package com.uja.ssccdd.sesion3.Ejercicio4;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.logging.Level;

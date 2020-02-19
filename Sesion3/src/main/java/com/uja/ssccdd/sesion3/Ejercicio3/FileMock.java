@@ -1,4 +1,4 @@
-package com.uja.ssccdd.sesion3;
+package com.uja.ssccdd.sesion3.Ejercicio3;
 
 /**
  *
