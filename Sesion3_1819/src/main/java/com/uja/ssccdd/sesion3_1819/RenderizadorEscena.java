@@ -10,8 +10,6 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -48,11 +46,8 @@ public class RenderizadorEscena implements Runnable {
                 }
             }
             barrera.await();
-        } catch (InterruptedException ex) {
+        } catch (InterruptedException|BrokenBarrierException ex) {
             System.out.println(Thread.currentThread().getName() + " ha finalizado por una interrupción. (Renderizador de escena)");
-        } catch (BrokenBarrierException ex) {
-            Logger.getLogger(RenderizadorEscena.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
 }
