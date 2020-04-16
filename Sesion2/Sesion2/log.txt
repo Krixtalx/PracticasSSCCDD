@@ -1,0 +1,255 @@
+Main: Estado del hilo 0: NEW
+Main: Estado del hilo 1: NEW
+Main: Estado del hilo 2: NEW
+Main: Estado del hilo 3: NEW
+Main: Estado del hilo 4: NEW
+Main: Estado del hilo 5: NEW
+Main: Estado del hilo 6: NEW
+Main: Estado del hilo 7: NEW
+Main: Estado del hilo 8: NEW
+Main: Estado del hilo 9: NEW
+Main : Id 11 - Hilo 0
+Main : Prioridad: 10
+Main : Estado antiguo: NEW
+Main : Nuevo estado: RUNNABLE
+
+ *************************************************
+
+Main : Id 12 - Hilo 1
+Main : Prioridad: 1
+Main : Estado antiguo: NEW
+Main : Nuevo estado: BLOCKED
+
+ *************************************************
+
+Main : Id 13 - Hilo 2
+Main : Prioridad: 10
+Main : Estado antiguo: NEW
+Main : Nuevo estado: BLOCKED
+
+ *************************************************
+
+Main : Id 14 - Hilo 3
+Main : Prioridad: 1
+Main : Estado antiguo: NEW
+Main : Nuevo estado: BLOCKED
+
+ *************************************************
+
+Main : Id 15 - Hilo 4
+Main : Prioridad: 10
+Main : Estado antiguo: NEW
+Main : Nuevo estado: BLOCKED
+
+ *************************************************
+
+Main : Id 16 - Hilo 5
+Main : Prioridad: 1
+Main : Estado antiguo: NEW
+Main : Nuevo estado: RUNNABLE
+
+ *************************************************
+
+Main : Id 17 - Hilo 6
+Main : Prioridad: 10
+Main : Estado antiguo: NEW
+Main : Nuevo estado: BLOCKED
+
+ *************************************************
+
+Main : Id 18 - Hilo 7
+Main : Prioridad: 1
+Main : Estado antiguo: NEW
+Main : Nuevo estado: BLOCKED
+
+ *************************************************
+
+Main : Id 19 - Hilo 8
+Main : Prioridad: 10
+Main : Estado antiguo: NEW
+Main : Nuevo estado: BLOCKED
+
+ *************************************************
+
+Main : Id 20 - Hilo 9
+Main : Prioridad: 1
+Main : Estado antiguo: NEW
+Main : Nuevo estado: BLOCKED
+
+ *************************************************
+
+Main : Id 11 - Hilo 0
+Main : Prioridad: 10
+Main : Estado antiguo: RUNNABLE
+Main : Nuevo estado: TERMINATED
+
+ *************************************************
+
+Main : Id 17 - Hilo 6
+Main : Prioridad: 10
+Main : Estado antiguo: BLOCKED
+Main : Nuevo estado: RUNNABLE
+
+ *************************************************
+
+Main : Id 16 - Hilo 5
+Main : Prioridad: 1
+Main : Estado antiguo: RUNNABLE
+Main : Nuevo estado: TERMINATED
+
+ *************************************************
+
+Main : Id 15 - Hilo 4
+Main : Prioridad: 10
+Main : Estado antiguo: BLOCKED
+Main : Nuevo estado: RUNNABLE
+
+ *************************************************
+
+Main : Id 17 - Hilo 6
+Main : Prioridad: 10
+Main : Estado antiguo: RUNNABLE
+Main : Nuevo estado: BLOCKED
+
+ *************************************************
+
+Main : Id 14 - Hilo 3
+Main : Prioridad: 1
+Main : Estado antiguo: BLOCKED
+Main : Nuevo estado: RUNNABLE
+
+ *************************************************
+
+Main : Id 15 - Hilo 4
+Main : Prioridad: 10
+Main : Estado antiguo: RUNNABLE
+Main : Nuevo estado: BLOCKED
+
+ *************************************************
+
+Main : Id 13 - Hilo 2
+Main : Prioridad: 10
+Main : Estado antiguo: BLOCKED
+Main : Nuevo estado: RUNNABLE
+
+ *************************************************
+
+Main : Id 14 - Hilo 3
+Main : Prioridad: 1
+Main : Estado antiguo: RUNNABLE
+Main : Nuevo estado: TERMINATED
+
+ *************************************************
+
+Main : Id 12 - Hilo 1
+Main : Prioridad: 1
+Main : Estado antiguo: BLOCKED
+Main : Nuevo estado: RUNNABLE
+
+ *************************************************
+
+Main : Id 13 - Hilo 2
+Main : Prioridad: 10
+Main : Estado antiguo: RUNNABLE
+Main : Nuevo estado: TERMINATED
+
+ *************************************************
+
+Main : Id 12 - Hilo 1
+Main : Prioridad: 1
+Main : Estado antiguo: RUNNABLE
+Main : Nuevo estado: BLOCKED
+
+ *************************************************
+
+Main : Id 17 - Hilo 6
+Main : Prioridad: 10
+Main : Estado antiguo: BLOCKED
+Main : Nuevo estado: RUNNABLE
+
+ *************************************************
+
+Main : Id 20 - Hilo 9
+Main : Prioridad: 1
+Main : Estado antiguo: BLOCKED
+Main : Nuevo estado: RUNNABLE
+
+ *************************************************
+
+Main : Id 17 - Hilo 6
+Main : Prioridad: 10
+Main : Estado antiguo: RUNNABLE
+Main : Nuevo estado: TERMINATED
+
+ *************************************************
+
+Main : Id 19 - Hilo 8
+Main : Prioridad: 10
+Main : Estado antiguo: BLOCKED
+Main : Nuevo estado: RUNNABLE
+
+ *************************************************
+
+Main : Id 20 - Hilo 9
+Main : Prioridad: 1
+Main : Estado antiguo: RUNNABLE
+Main : Nuevo estado: TERMINATED
+
+ *************************************************
+
+Main : Id 18 - Hilo 7
+Main : Prioridad: 1
+Main : Estado antiguo: BLOCKED
+Main : Nuevo estado: RUNNABLE
+
+ *************************************************
+
+Main : Id 19 - Hilo 8
+Main : Prioridad: 10
+Main : Estado antiguo: RUNNABLE
+Main : Nuevo estado: TERMINATED
+
+ *************************************************
+
+Main : Id 15 - Hilo 4
+Main : Prioridad: 10
+Main : Estado antiguo: BLOCKED
+Main : Nuevo estado: RUNNABLE
+
+ *************************************************
+
+Main : Id 18 - Hilo 7
+Main : Prioridad: 1
+Main : Estado antiguo: RUNNABLE
+Main : Nuevo estado: TERMINATED
+
+ *************************************************
+
+Main : Id 12 - Hilo 1
+Main : Prioridad: 1
+Main : Estado antiguo: BLOCKED
+Main : Nuevo estado: RUNNABLE
+
+ *************************************************
+
+Main : Id 15 - Hilo 4
+Main : Prioridad: 10
+Main : Estado antiguo: RUNNABLE
+Main : Nuevo estado: BLOCKED
+
+ *************************************************
+
+Main : Id 15 - Hilo 4
+Main : Prioridad: 10
+Main : Estado antiguo: BLOCKED
+Main : Nuevo estado: RUNNABLE
+
+ *************************************************
+
+Main : Id 12 - Hilo 1
+Main : Prioridad: 1
+Main : Estado antiguo: RUNNABLE
+Main : Nuevo estado: TERMINATED
+
+ *************************************************
+
